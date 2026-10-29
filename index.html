@@ -13,142 +13,45 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header" id="inicio">
-    <a class="brand" href="#inicio" aria-label="Margem Aberta, início">
+    <div class="brand">
       <img class="brand-logo" src="brand-logo-paper.png" alt="">
       <span class="brand-copy">
         <strong>Margem Aberta</strong>
         <small>Frases que ficam. Livros que continuam.</small>
       </span>
-    </a>
+    </div>
   </header>
 
   <main id="conteudo">
 
-    <section class="books-section" id="biblioteca" aria-labelledby="books-title">
-      <div class="books-heading">
-        <div class="section-label"></div>
-        <div class="books-intro">
-          <h2 id="books-title">Uma pequena estante de ideias.</h2>
-        </div>
+    <section class="books-section catalog compact-layout" id="biblioteca" aria-labelledby="books-title">
+      <div class="section-head">
+        <p class="eyebrow">A biblioteca Margem Aberta</p>
+        <h1 id="books-title">Uma estante para <em>explorar.</em></h1>
+        <p class="lede">Encontre livros pelo título, autor ou categoria.</p>
       </div>
 
-      <div class="book-grid">
-        <article class="book-card">
-		<a href="https://link.amazon/B0jaBVrWE">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img src='https://m.media-amazon.com/images/I/41mn5iCCQsL._SY445_SX342_ML2_.jpg' alt="" style="display:block;width:100%;height:auto;object-fit:contain"></span></center>
-            <span class="cover-author">Epicteto</span>
-            <span class="cover-foot">Filosofia</span>
+      <div class="compact-filters" role="search" aria-label="Buscar e filtrar livros">
+        <div class="toolbar">
+          <div class="search-field">
+            <label for="book-search">Buscar na estante</label>
+            <input id="book-search" class="search-input" type="search" data-query placeholder="Título, autor ou categoria" autocomplete="off">
           </div>
-          <div class="book-info"><span>Filosofia</span><h3>Manual de Epicteto</h3><p>Epicteto</p></div>
-		</a>
-		</article>
-				  
-	    <article class="book-card">
-		<a href="https://link.amazon/B0hu7zr4D">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/91WuvposcCL._AC_SL1500_.jpg'></span></center>
-            <span class="cover-author">Fiódor Dostoiévski</span>
-            <span class="cover-foot">Literatura</span>
+          <div class="filter-control">
+            <label class="filter-label" for="category-filter">Categoria</label>
+            <select class="category-select" id="category-filter" data-category-select></select>
           </div>
-          <div class="book-info"><span>Literatura</span><h3>Noites Brancas</h3><p>Fiódor Dostoiévski</p></div>
-		</a>
-		</article>
-		  
-	    <article class="book-card">
-		<a href="https://link.amazon/B09ki0yqb">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/71YSm7ehYqL._AC_UF1000,1000_QL80_FMwebp_.jpg'></span></center>
-            <span class="cover-author">Raphael Montes</span>
-            <span class="cover-foot">Literatura Erotica</span>
-          </div>
-          <div class="book-info"><span>Literatura Erotica</span><h3>A estranha na cama</h3><p>Raphael Montes</p></div>
-		</a>
-		</article>
-		  
-	    <article class="book-card">
-		<a href="https://link.amazon/B0abFnOI1">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/71neJqQwTjL._SL1144_.jpg'></span></center>
-            <span class="cover-author">Franz Kafka</span>
-            <span class="cover-foot">Literatura Clássica</span>
-          </div>
-          <div class="book-info"><span>Literatura Clássica</span><h3>A metamorfose</h3><p>Franz Kafka</p></div>
-		</a>
-	   </article>
-	    <article class="book-card">
-		<a href="https://link.amazon/B03PprFcv">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/51ABRx3d7GL._SY445_SX342_ML2_.jpg'></span></center>
-            <span class="cover-author">Colleen Hoover</span>
-            <span class="cover-foot">Policial, Suspense e Mistério</span>
-          </div>
-          <div class="book-info"><span>Policial, Suspense e Mistério</span><h3>Verity</h3><p>Colleen Hoover</p></div>
-		</a>
-	   </article>
-	    <article class="book-card">
-		<a href="https://link.amazon/B09oz4h6K">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/71tfVLKiJ8L._SL1500_.jpg'></span></center>
-            <span class="cover-author">Antoine de Saint-Exupéry</span>
-            <span class="cover-foot">Fantasia</span>
-          </div>
-          <div class="book-info"><span>Fantasia</span><h3>O Pequeno Príncipe</h3><p>Antoine de Saint-Exupéry</p></div>
-		</a>
-	   </article>
-        <article class="book-card">
-		<a href="https://a.co/d/04a1Z5AQ">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/41dSunJl10L._SY445_SX342_QL70_ML2_.jpg'></span></center>
-            <span class="cover-author">Marco Aurélio</span>
-            <span class="cover-foot">Filosofia</span>
-          </div>
-          <div class="book-info"><span>Filosofia</span><h3>Meditações</h3><p>Marco Aurélio</p></div>
-		</a>
-	   </article>
-        <article class="book-card">
-		<a href="https://link.amazon/B0aKjViIF">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/713toqhfH8L._SY385_.jpg'></span></center>
-            <span class="cover-author">Machado de Assis</span>
-            <span class="cover-foot">Literatura Brasileira</span>
-          </div>
-          <div class="book-info"><span>Literatura Brasileira</span><h3>Dom Casmurro</h3><p>Machado de Assis</p></div>
-		</a>
-	   </article>
+        </div>
+        <div class="category-chips" data-category-chips role="group" aria-label="Filtrar por categoria"></div>
+      </div>
 
-		<article class="book-card">
-		<a href="https://link.amazon/B0gCU2gpV">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/61hAKXNgRpL._SY385_.jpg'></span></center>
-            <span class="cover-author">George Orwell</span>
-            <span class="cover-foot">Ficção Científica Distópico</span>
-          </div>
-          <div class="book-info"><span>Ficção Científica Distópico</span><h3>1984</h3><p>George Orwell</p></div>
-		</a>
-	   </article>
-
-		<article class="book-card">
-		<a href="https://link.amazon/B0b03XCgX">
-          <div class="book-cover cover-meditations" aria-hidden="true">
-            <span class="cover-edition">MARGEM ABERTA</span>
-            <center><span class="cover-title"><img width="100%" src='https://m.media-amazon.com/images/I/81hCVEC0ExL._SY466_.jpg'></span></center>
-            <span class="cover-author">J. R. R. Tolkien</span>
-            <span class="cover-foot">Fanstasia</span>
-          </div>
-          <div class="book-info"><span>Fantasia</span><h3>A Sociedade do Anel</h3><p>J. R. R. Tolkien</p></div>
-		</a>
-	   </article>
-
+      <div class="results">
+        <div class="results-heading">
+          <p class="results-count" data-count aria-live="polite"></p>
+          <button type="button" class="clear-button" data-clear>Limpar filtros</button>
+        </div>
+        <div class="book-grid" data-grid></div>
+        <p class="empty-state" data-empty role="status">Nenhum livro encontrado. Tente outro título, autor ou categoria.</p>
       </div>
     </section>
 
