@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "A última carta", author: "Rebecca Yarros", category: "Romance", href: "https://link.amazon/B01VwTfCp", cover: "https://m.media-amazon.com/images/I/81NjNkmjBqL._SY522_.jpg" },
   { title: "A Biblioteca da Meia-Noite", author: "Matt Haig", category: "Literatura", href: "https://link.amazon/B00RsH1OR", cover: "https://m.media-amazon.com/images/I/61efXnGAjeL._AC_SX679_.jpg" },
   { title: "Manual de Epicteto", author: "Epicteto", category: "Filosofia", href: "https://link.amazon/B0jaBVrWE", cover: "https://m.media-amazon.com/images/I/41mn5iCCQsL._SY445_SX342_ML2_.jpg" },
   { title: "Noites Brancas", author: "Fiódor Dostoiévski", category: "Literatura", href: "https://link.amazon/B0hu7zr4D", cover: "https://m.media-amazon.com/images/I/91WuvposcCL._AC_SL1500_.jpg" },
