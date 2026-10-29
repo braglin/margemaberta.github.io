@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "A Biblioteca da Meia-Noite", author: "Matt Haig", category: "Literatura", href: "https://link.amazon/B00RsH1OR", cover: "https://m.media-amazon.com/images/I/61efXnGAjeL._AC_SX679_.jpg" },
   { title: "Manual de Epicteto", author: "Epicteto", category: "Filosofia", href: "https://link.amazon/B0jaBVrWE", cover: "https://m.media-amazon.com/images/I/41mn5iCCQsL._SY445_SX342_ML2_.jpg" },
   { title: "Noites Brancas", author: "Fiódor Dostoiévski", category: "Literatura", href: "https://link.amazon/B0hu7zr4D", cover: "https://m.media-amazon.com/images/I/91WuvposcCL._AC_SL1500_.jpg" },
   { title: "A estranha na cama", author: "Raphael Montes", category: "Literatura Erotica", href: "https://link.amazon/B09ki0yqb", cover: "https://m.media-amazon.com/images/I/71YSm7ehYqL._AC_UF1000,1000_QL80_FMwebp_.jpg" },
