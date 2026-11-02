@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "Vidas Secas", author: "Graciliano Ramos", category: "Literatura Brasileira", href: "https://link.amazon/B02lsaAKw", cover: "https://m.media-amazon.com/images/I/61UQJAGf5hL._SY522_.jpg" },
   { title: "A Morte de Ivan Ilitch", author: "Liev Tolstói", category: "Literatura Clássica", href: "https://link.amazon/B0aJaUIKF", cover: "https://m.media-amazon.com/images/I/61zgVBVoqqL._SY522_.jpg" },
   { title: "Dom Quixote de La Mancha", author: "Miguel de Cervantes", category: "Literatura Clássica", href: "https://link.amazon/B08LhTjQN", cover: "https://m.media-amazon.com/images/I/81XC3IE0biL._SY522_.jpg" },
   { title: "A última carta", author: "Rebecca Yarros", category: "Romance", href: "https://link.amazon/B01VwTfCp", cover: "https://m.media-amazon.com/images/I/81NjNkmjBqL._SY522_.jpg" },
