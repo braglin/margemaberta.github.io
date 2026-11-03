@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "Duna", author: "Frank Herbert", category: "Ficção Científica", href: "https://link.amazon/B03WcyuAm", cover: "https://m.media-amazon.com/images/I/81zN7udGRUL._SY522_.jpg" },
   { title: "Vidas Secas", author: "Graciliano Ramos", category: "Literatura Brasileira", href: "https://link.amazon/B02lsaAKw", cover: "https://m.media-amazon.com/images/I/61UQJAGf5hL._SY522_.jpg" },
   { title: "A Morte de Ivan Ilitch", author: "Liev Tolstói", category: "Literatura Clássica", href: "https://link.amazon/B0aJaUIKF", cover: "https://m.media-amazon.com/images/I/61zgVBVoqqL._SY522_.jpg" },
   { title: "Dom Quixote de La Mancha", author: "Miguel de Cervantes", category: "Literatura Clássica", href: "https://link.amazon/B08LhTjQN", cover: "https://m.media-amazon.com/images/I/81XC3IE0biL._SY522_.jpg" },
