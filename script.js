@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "Crime e Castigo — edição luxo, capa dura", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B03tskvTX", cover: "https://m.media-amazon.com/images/I/71T0vj22qyL._SL1200_.jpg" },
   { title: "O conde de Monte Cristo: edição bolso de luxo (Clássicos Zahar)", author: "Alexandre Dumas", category: "Literatura Clássica", href: "https://link.amazon/B073PLJr9", cover: "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/81ZswN9PVPL._SL1500_.jpg" },
   { title: "Eu, Robô", author: "Isaac Asimov", category: "Ficção Científica", href: "https://link.amazon/B0hLa6GVB", cover: "https://m.media-amazon.com/images/I/61ooZHl+CTL._SY522_.jpg" },
   { title: "Os Irmãos Karamazov", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B08Z0e625", cover: "https://m.media-amazon.com/images/I/81yLmLYadkL._SY522_.jpg" },
