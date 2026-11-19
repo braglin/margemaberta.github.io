@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "O jogador", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B0hO2WnFI", cover: "https://m.media-amazon.com/images/I/71K9SUr-adL._SL1500_.jpg", copy: "Uma aposta nunca fica só na mesa. Em O jogador, Dostoiévski transforma o fascínio pelo acaso e a compulsão em um retrato psicológico intenso." },
   { title: "O conde de Monte Cristo: edição bolso de luxo (Clássicos Zahar)", author: "Alexandre Dumas", category: "Literatura Clássica", href: "https://link.amazon/B073PLJr9", cover: "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/81ZswN9PVPL._SL1500_.jpg" },
   { title: "Eu, Robô", author: "Isaac Asimov", category: "Ficção Científica", href: "https://link.amazon/B0hLa6GVB", cover: "https://m.media-amazon.com/images/I/61ooZHl+CTL._SY522_.jpg" },
   { title: "Os Irmãos Karamazov", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B08Z0e625", cover: "https://m.media-amazon.com/images/I/81yLmLYadkL._SY522_.jpg" },
@@ -96,7 +97,8 @@ if (catalog && searchInput && categorySelect && categoryChips && bookGrid) {
       '<img loading="lazy" src="' + escapeHtml(book.cover) + '" alt="Capa de ' + title + '">' +
       '</a>' +
       '<div class="book-info"><p class="book-category">' + escapeHtml(book.category) + '</p>' +
-      '<h2>' + title + '</h2><p class="book-author">' + escapeHtml(book.author) + '</p></div>' +
+      '<h2>' + title + '</h2><p class="book-author">' + escapeHtml(book.author) + '</p>' +
+      (book.copy ? '<p class="book-copy">' + escapeHtml(book.copy) + '</p>' : '') + '</div>' +
       '</article>';
   }
 
