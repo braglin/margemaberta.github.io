@@ -101,7 +101,8 @@ if (catalog && searchInput && categorySelect && categoryChips && bookGrid) {
       '</a>' +
       '<div class="book-info"><p class="book-category">' + escapeHtml(book.category) + '</p>' +
       '<h2>' + title + '</h2><p class="book-author">' + escapeHtml(book.author) + '</p>' +
-      '(book.publisher && book.pages && book.isbn ? \'<p class="book-edition">\' + escapeHtml(book.publisher) + \' · \' + escapeHtml(book.pages) + \' · ISBN \' + escapeHtml(book.isbn) + \'</p>\' : \'\') +\n      (book.copy ? \'<p class="book-copy">\' + escapeHtml(book.copy) + \'</p>\' : \'\') + \'</div>\' +
+      (book.publisher && book.pages && book.isbn ? '<p class="book-edition">' + escapeHtml(book.publisher) + ' · ' + escapeHtml(book.pages) + ' · ISBN ' + escapeHtml(book.isbn) + '</p>' : '') +
+      (book.copy ? '<p class="book-copy">' + escapeHtml(book.copy) + '</p>' : '') + '</div>' +
       '</article>';
   }
 
