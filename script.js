@@ -35,6 +35,8 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "O jogador", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B0hO2WnFI", publisher: "Principis", pages: "160 páginas", isbn: "9786550973551", cover: "https://m.media-amazon.com/images/I/71K9SUr-adL._SL1500_.jpg", copy: "Uma aposta nunca fica só na mesa. Em O jogador, Dostoiévski transforma o fascínio pelo acaso e a compulsão em um retrato psicológico intenso." },
+  { title: "Crime e Castigo — edição luxo, capa dura", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B03tskvTX", cover: "https://m.media-amazon.com/images/I/71T0vj22qyL._SL1200_.jpg" },
   { title: "Grande sertão: veredas (Edição especial 70 anos)", author: "João Guimarães Rosa", category: "Literatura", href: "https://link.amazon/B0fHRi0MH", cover: "https://m.media-amazon.com/images/I/91mSqSRWh9L._SL1500_.jpg" },
   { title: "Tabacaria", author: "Fernando Pessoa e Álvaro de Campos", category: "Literatura", href: "https://link.amazon/B0eqswz6j", cover: "https://m.media-amazon.com/images/I/61t6ZwnZnBL._SL1000_.jpg" },
   { title: "O conde de Monte Cristo: edição bolso de luxo (Clássicos Zahar)", author: "Alexandre Dumas", category: "Literatura Clássica", href: "https://link.amazon/B073PLJr9", cover: "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/81ZswN9PVPL._SL1500_.jpg" },
@@ -98,14 +100,16 @@ if (catalog && searchInput && categorySelect && categoryChips && bookGrid) {
       '<img loading="lazy" src="' + escapeHtml(book.cover) + '" alt="Capa de ' + title + '">' +
       '</a>' +
       '<div class="book-info"><p class="book-category">' + escapeHtml(book.category) + '</p>' +
-      '<h2>' + title + '</h2><p class="book-author">' + escapeHtml(book.author) + '</p></div>' +
+      '<h2>' + title + '</h2><p class="book-author">' + escapeHtml(book.author) + '</p>' +
+      (book.publisher && book.pages && book.isbn ? '<p class="book-edition">' + escapeHtml(book.publisher) + ' · ' + escapeHtml(book.pages) + ' · ISBN ' + escapeHtml(book.isbn) + '</p>' : '') +
+      (book.copy ? '<p class="book-copy">' + escapeHtml(book.copy) + '</p>' : '') + '</div>' +
       '</article>';
   }
 
   function applyFilters() {
     const query = normalize(searchInput.value.trim());
     const shownBooks = books.filter((book) => {
-      const matchesQuery = !query || normalize(book.title + " " + book.author + " " + book.category).includes(query);
+      const matchesQuery = !query || normalize([book.title, book.author, book.category, book.publisher, book.pages, book.isbn, book.copy].filter(Boolean).join(" ")).includes(query);
       const matchesCategory = state.category === "all" || book.category === state.category;
       return matchesQuery && matchesCategory;
     });
