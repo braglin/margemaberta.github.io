@@ -35,6 +35,7 @@ const year = document.querySelector("#current-year");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const books = [
+  { title: "O Alquimista", author: "Paulo Coelho", category: "Literatura Brasileira", href: "https://link.amazon/B0fd1gKy0", cover: "https://m.media-amazon.com/images/P/8584395768.01._SCLZZZZZZZ_SX500_.jpg" },
   { title: "O jogador", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B0hO2WnFI", publisher: "Principis", pages: "160 páginas", isbn: "9786550973551", cover: "https://m.media-amazon.com/images/I/71K9SUr-adL._SL1500_.jpg", copy: "Uma aposta nunca fica só na mesa. Em O jogador, Dostoiévski transforma o fascínio pelo acaso e a compulsão em um retrato psicológico intenso." },
   { title: "Crime e Castigo — edição luxo, capa dura", author: "Fiódor Dostoiévski", category: "Literatura Clássica", href: "https://link.amazon/B03tskvTX", cover: "https://m.media-amazon.com/images/I/71T0vj22qyL._SL1200_.jpg" },
   { title: "Grande sertão: veredas (Edição especial 70 anos)", author: "João Guimarães Rosa", category: "Literatura", href: "https://link.amazon/B0fHRi0MH", cover: "https://m.media-amazon.com/images/I/91mSqSRWh9L._SL1500_.jpg" },
